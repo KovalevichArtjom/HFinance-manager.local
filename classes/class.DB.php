@@ -7,7 +7,8 @@ class DB
     /**
      * Connection from Data Base.
      */
-    private static function connection(){
+    private static function connection()
+    {
         if(self::$Instance === null) {
             self::$Instance = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
             $error = self::$Instance->connect_errno;
@@ -23,7 +24,8 @@ class DB
      * and Arrays with Types and Params request.
      * @return bool|string
      */
-    public static function query($dataRequest){
+    public static function query($dataRequest)
+    {
         $types = null;//types params
         $params = [];//val params
         if(is_array($dataRequest)) {
@@ -52,7 +54,8 @@ class DB
      * @param $query
      * @return mixed|string
      */
-    public static function getData($query){
+    public static function getData($query)
+    {
         $answer = self::connection()->query($query);
         if($answer){
             //get result request.
