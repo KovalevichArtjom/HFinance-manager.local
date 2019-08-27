@@ -7,7 +7,12 @@ class MainController
      * Render content for page.
      * @author AKovalevich
      */
-    public static function getPageIndex(){
+    public static function getPageIndex()
+    {
+
+
+
+
         $message = null;
         //Array of purchases statuses
         $arrStatusPurchase = array(
