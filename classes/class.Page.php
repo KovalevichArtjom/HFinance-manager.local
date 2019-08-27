@@ -3,8 +3,7 @@
 
 class Page
 {
-    public static function getPage()
-    {
+    public static function getPage(){
         $controller = 'main';
         if(isset($_GET['page'])){
             $controller = $_GET['page'];
