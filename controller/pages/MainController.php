@@ -10,6 +10,7 @@ class MainController
     public static function getPageIndex()
     {
 
+
         $message = null;
         //Array of purchases statuses
         $arrStatusPurchase = array(
